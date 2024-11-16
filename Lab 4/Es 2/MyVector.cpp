@@ -57,7 +57,7 @@ double MyVector::at(int index) const {
 }
 void MyVector::push_back() {
 	if (sz == cp)
-		resize();
+		resize(2*cp);
 	sz++;
 }
 void MyVector::pop_back() {

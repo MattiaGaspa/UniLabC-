@@ -9,12 +9,12 @@ int main(void) {
 		vettore[i] = i;
 	}
 	cout << vettore << endl;
-	/*vettore.at(1) = 10;
+	vettore.at(1) = 10;
 	cout << vettore << endl;
 	vettore.push_back();
 	cout << "Vettore di size: " << vettore.size() << " capacity: " << vettore.capacity() << endl;
 	vettore.reserve(10000);
 	cout << "Vettore di size: " << vettore.size() << " capacity: " << vettore.capacity() << endl;
-	cout << vettore << endl;*/
+	cout << vettore << endl;
 	return 0;
 }
