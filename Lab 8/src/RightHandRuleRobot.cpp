@@ -6,29 +6,62 @@
 // 2 R 3
 //   4
 void RightHandRuleRobot::move(Maze& maze) {
-	/*int nrow = newRow(3);
-	int ncolumn = newColumn(3);
-	
-	// No wall on the right!
-	if (maze.getPosition(nrow, ncolumn) == ' ') {
-		row = nrow;
-		column = ncolumn;
-	}
-	// Wall on the right!
-	else {
-		if (foundRightWall == false) foundRightWall = true;
-		// Wall on the right -> up!
-		if (maze.getPosition(newRow(1), newColumn(1)) == ' ') {
-			row = newRow(1);
-			column = newColumn(1);
+    int nrow, ncolumn;
+
+	if (foundRightWall == false) {
+        nrow = newRow(3);
+        ncolumn = newColumn(3);
+		if (maze.getPosition(nrow, ncolumn) == '*') {
+		    foundRightWall = true;
 		}
-		// Wall above!
 		else {
-			// Wall on the right and above -> left
-			if (maze.getPosition(newRow(2), newColumn(2)) == ' ') {
-				row = newRow(2);
-				column = newColumn(2);
-			}
+			row = nrow;
+			column = ncolumn;
+			if (maze.getPosition(newRow(4), newColumn(4)) != '*') {
+                foundDownWall = false;
+            }
 		}
-	}*/
+    }
+    if (foundRightWall == true && foundUpWall == false) {
+        nrow = newRow(1);
+        ncolumn = newColumn(1);
+		if (maze.getPosition(nrow, ncolumn) == '*') {
+		    foundUpWall = true;
+		}
+		else {
+			row = nrow;
+			column = ncolumn;
+			if (maze.getPosition(newRow(3), newColumn(3)) != '*') {
+                foundRightWall = false;
+            }
+		}
+    }
+    if (foundRightWall == true && foundUpWall == true && foundLeftWall == false) {
+        nrow = newRow(2);
+        ncolumn = newColumn(2);
+		if (maze.getPosition(nrow, ncolumn) == '*') {
+            foundLeftWall = true;
+		}
+		else {
+			row = nrow;
+			column = ncolumn;
+			if (maze.getPosition(newRow(1), newColumn(1)) != '*') {
+                foundUpWall = false;
+            }
+		}
+    }
+    if (foundRightWall == true && foundUpWall == true && foundLeftWall == true && foundDownWall == false) {
+        nrow = newRow(4);
+        ncolumn = newColumn(4);
+		if (maze.getPosition(nrow, ncolumn) == '*') {
+            foundDownWall = true;
+		}
+		else {
+			row = nrow;
+			column = ncolumn;
+			if (maze.getPosition(newRow(2), newColumn(2)) != '*') {
+                foundLeftWall = false;
+            }
+		}
+    }
 }
