@@ -16,7 +16,7 @@ protected:
 	}
 	int newColumn(char direction) const {
 		if ((direction == 2) && (column > 0)) return column - 1;
-		if ((direction == 4) && (column < 9)) return column + 1;
+		if ((direction == 3) && (column < 9)) return column + 1;
 		return column;
 	}
 
