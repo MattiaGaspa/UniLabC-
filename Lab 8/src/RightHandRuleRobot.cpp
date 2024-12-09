@@ -4,7 +4,7 @@
 RightHandRuleRobot::RightHandRuleRobot(Maze& maze) {
 	for (int i = 0; i < maze.getRows(); i++) {
 		for (int j = 0; j < maze.getColumns(); j++) {
-			if (maze.getPosition(i, j) == 'R') {
+			if (maze.getPosition(i, j) == 'S') {
 				row = i;
 				column = j;
 			}

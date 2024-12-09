@@ -18,8 +18,8 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3c99a5d8-d479-48b7-bcfc-a7e8d562c2da" name="Changes" comment="Dio can non ne posso più">
-      <change beforePath="$PROJECT_DIR$/Lab 8/src/RandomRobot.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Lab 8/src/RandomRobot.cpp" afterDir="false" />
+    <list default="true" id="3c99a5d8-d479-48b7-bcfc-a7e8d562c2da" name="Changes" comment="it just works™️">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -80,7 +80,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1733736680337</updated>
-      <workItem from="1733736681755" duration="4801000" />
+      <workItem from="1733736681755" duration="5147000" />
     </task>
     <task id="LOCAL-00001" summary="Dio can non ne posso più">
       <option name="closed" value="true" />
@@ -90,7 +90,23 @@
       <option name="project" value="LOCAL" />
       <updated>1733741198061</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="small fix">
+      <option name="closed" value="true" />
+      <created>1733741643669</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1733741643669</updated>
+    </task>
+    <task id="LOCAL-00003" summary="it just works™️">
+      <option name="closed" value="true" />
+      <created>1733741816241</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1733741816241</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -98,6 +114,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Dio can non ne posso più" />
-    <option name="LAST_COMMIT_MESSAGE" value="Dio can non ne posso più" />
+    <MESSAGE value="small fix" />
+    <MESSAGE value="it just works™️" />
+    <option name="LAST_COMMIT_MESSAGE" value="it just works™️" />
   </component>
 </project>
