@@ -10,9 +10,17 @@ class Maze {
 	std::vector<std::string> maze;
 	
 public:
-	Maze(std::vector<std::string> maze);
+	Maze() = default;
+	void add_row(std::string row);
+
 	char getPosition(int row, int column) const;
-	class IllegalMaze {};
+    std::string toString() const;
+	std::string toFormattedString() const;
+
+    int getRows() const { return rows; }
+    int getColumns() const { return columns; }
+
+    class IllegalMaze {};
 	class IllegalPosition {};
 };
 

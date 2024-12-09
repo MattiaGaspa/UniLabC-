@@ -7,6 +7,7 @@
 
 class RandomRobot : public Robot {
 public:
+  	RandomRobot(Maze& maze);
 	void move(Maze& maze);
 };
 

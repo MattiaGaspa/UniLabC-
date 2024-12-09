@@ -11,6 +11,7 @@ class RightHandRuleRobot : public Robot {
 	bool foundUpWall{false};
 	bool foundDownWall{false};
 public:
+  	RightHandRuleRobot(Maze& maze);
 	void move(Maze& maze);
 };
 
