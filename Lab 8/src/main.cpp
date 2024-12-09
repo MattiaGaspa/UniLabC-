@@ -20,13 +20,12 @@ int main(void) {
     cout << maze.toFormattedString() << endl;
 
     RightHandRuleRobot robot1(maze);
-    /*
     while (robot1.findExit(maze) == false) {
 		robot1.move(maze);
-        cout << robot1.toString() << endl;
-	}*/
+	}
+	cout << robot1.toString() << endl;
+
 	RandomRobot robot2(maze);
-	cout << robot2.toString() << endl;
     while (!robot2.findExit(maze)) {
     	robot2.move(maze);
     }
