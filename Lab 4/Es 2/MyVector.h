@@ -9,12 +9,24 @@ class MyVector {
 	int sz{0};
 	int cp{0};
 	
+<<<<<<< HEAD
 	void resize() {
 		double* nptr = new double[cp*2];
 		copy(ptr, ptr+cp, nptr);
 		delete[] ptr;
 		ptr = nptr;
 		cp *= 2;
+=======
+	void resize(int newCapacity) {
+		if (newCapacity < cp) return;
+		double* nptr = new double[newCapacity];
+		copy(ptr, ptr+cp, nptr);
+		for (int i=cp; i < newCapacity; i++)
+			ptr[i] = 0;
+		delete[] ptr;
+		ptr = nptr;
+		cp = newCapacity;
+>>>>>>> 26c5a8227017a379697ce40c35ff8389e2e9ff1a
 	}
 	
 	public:
@@ -36,6 +48,10 @@ class MyVector {
 		int capacity() const { return cp; };
 		void reserve(int cp) {
 			if (this->cp <= cp) this->cp = cp;
+<<<<<<< HEAD
+=======
+			resize(cp);
+>>>>>>> 26c5a8227017a379697ce40c35ff8389e2e9ff1a
 		}
 		
 		double& operator[](int index);

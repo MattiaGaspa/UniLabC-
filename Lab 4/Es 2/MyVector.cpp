@@ -57,7 +57,11 @@ double MyVector::at(int index) const {
 }
 void MyVector::push_back() {
 	if (sz == cp)
+<<<<<<< HEAD
 		resize();
+=======
+		resize(2*cp);
+>>>>>>> 26c5a8227017a379697ce40c35ff8389e2e9ff1a
 	sz++;
 }
 void MyVector::pop_back() {
