@@ -9,20 +9,5 @@ int main(void) {
 		vettore[i] = i;
 	}
 	cout << vettore << endl;
-<<<<<<< HEAD
-	/*vettore.at(1) = 10;
-=======
-	vettore.at(1) = 10;
->>>>>>> 26c5a8227017a379697ce40c35ff8389e2e9ff1a
-	cout << vettore << endl;
-	vettore.push_back();
-	cout << "Vettore di size: " << vettore.size() << " capacity: " << vettore.capacity() << endl;
-	vettore.reserve(10000);
-	cout << "Vettore di size: " << vettore.size() << " capacity: " << vettore.capacity() << endl;
-<<<<<<< HEAD
-	cout << vettore << endl;*/
-=======
-	cout << vettore << endl;
->>>>>>> 26c5a8227017a379697ce40c35ff8389e2e9ff1a
 	return 0;
 }

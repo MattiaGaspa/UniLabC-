@@ -1,15 +1,31 @@
 #include <iostream>
+#include <fstream>
 #include "Maze.h"
 
-Maze::Maze(std::vector<std::string> maze) {
-	if (maze.size() == columns) {
-		for (int i = 0; i < columns; i++) {
-			if (maze[i].size() == rows) {
-				this->maze = maze;
-			}
-		}
+void Maze::add_row(std::string row) {
+	if (row.size() != columns) throw IllegalMaze();
+	maze.push_back(row);
+}
+
+std::string Maze::toString() const {
+	std::string result;
+	for (int i = 0; i < rows; i++) {
+		result += maze[i] + "\n";
 	}
-	throw new IllegalMaze();
+    result += "\b";
+	return result;
+}
+
+std::string Maze::toFormattedString() const {
+	std::string result;
+	for (int i = 0; i < rows; i++) {
+		result += std::to_string(i) + " " + maze[i] + "\n";
+	}
+    result += "  ";
+    for (int i = 0; i < columns; i++) {
+		result += std::to_string(i);
+    }
+	return result;
 }
 
 char Maze::getPosition(int row, int column) const {

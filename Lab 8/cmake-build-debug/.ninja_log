@@ -1,0 +1,6 @@
+# ninja log v6
+2	585	1733902825982431677	CMakeFiles/main.dir/src/RandomRobot.cpp.o	6972a97a22fc69e5
+3	600	1733902825982431677	CMakeFiles/main.dir/src/RightHandRuleRobot.cpp.o	e951a3a48f8bd90a
+1	708	1733902825981431686	CMakeFiles/main.dir/src/main.cpp.o	f70ced6ff3e0e134
+2	775	1733902825981431686	CMakeFiles/main.dir/src/Maze.cpp.o	e7cf2013ac068307
+775	915	1733902826754424993	main	5a69a8ea3f168d41
