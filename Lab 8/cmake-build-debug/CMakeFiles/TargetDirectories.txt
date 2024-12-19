@@ -1,0 +1,3 @@
+/home/gasmat/Documenti/Università/Corsi/Laboratorio di programmazione (B)/Programmi/UniLabCpp/Lab 8/cmake-build-debug/CMakeFiles/main.dir
+/home/gasmat/Documenti/Università/Corsi/Laboratorio di programmazione (B)/Programmi/UniLabCpp/Lab 8/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/gasmat/Documenti/Università/Corsi/Laboratorio di programmazione (B)/Programmi/UniLabCpp/Lab 8/cmake-build-debug/CMakeFiles/rebuild_cache.dir
